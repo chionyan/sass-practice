@@ -1,0 +1,53 @@
+// Scss Document
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    display: block;
+  }
+
+  nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        display: inline-block;
+      }
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+  }
+}
+
+#main {
+  float: left;
+  width: 640px;
+  @media screen and (max-width: 640px) {
+    float: none;
+    width: auto;
+  }
+  section {
+    margin-bottom: 50px;
+    h2 {
+      font-size: 140%;
+    }
+    p, ul {
+      margin-bottom: 1.5em;
+    }
+    p.notes {
+      color: red;
+    }
+    + section {
+      margin-top: 50px;
+    }
+    > h2 {
+      font-size: 140%;
+    }
+  }
+}
